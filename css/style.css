@@ -61,3 +61,129 @@ a::before{
 ul li:first-child, ul li:last-child{
     border: none;
 }
+
+/* Bai 2 Form Tương tac */
+.form{
+    display: block;
+    width: 100%;
+    background-color: #00e5ad;
+    min-height: 100vh;
+    display: flex;
+}
+.form-register{
+    width: 800px;
+    display: block;
+    background-color: #fff;
+    margin-top: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title{
+    font-size: 2rem;
+    font-weight: 500px;
+    color: #145cae;
+    margin-top: 30px;
+}
+.form-body{
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /* background-color: #ccc; */
+    min-height: 100vh;
+}
+.form-label{
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.form-input{
+    box-sizing: border-box;
+    display:block;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #04c8ba;
+    padding:2px 4px;
+    font-size: 1rem;
+    font-weight: 500px;
+    text-align: left;
+    outline: none
+}
+
+.form-input:invalid:not(:focus) {
+    border: 1px solid red;
+}
+.form-radio{
+    display: block;
+    margin: 10px auto;
+}
+.form-radio-label{
+    display: inline-block;
+    font-size: 1rem;    
+    font-weight: 400px;
+    margin: 0 10px;
+    padding: 0 10px;
+}   
+.radio{
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1rem;    
+    
+}
+.img-avatar-placeholder{
+    margin: 10px 0;
+    display: block;
+    border-radius: 50%;
+    width: 100px; 
+    height: 100px;  
+    cursor: pointer;
+}
+.form-checkbox{
+    display: block;
+    margin: 10px auto;
+    text-align: left;
+}
+.form-checkbox-label{
+    display: block;
+}
+.btn{
+    display: block;
+    width: 70%;
+    background-color: #04c8ba;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 500px;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin: 20px auto;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #0a1fdd;
+    color: red;
+    font-weight: 500px;
+    text-decoration: none;
+}
+.btn:active{
+    background-color: #dd0a2d;
+    color: rgb(115, 255, 0);
+    font-weight: 500px;
+    text-decoration: none;
+}
+form:focus-within{
+    background-color: #fff;
+    border: 10x solid #04c8ba;
+    box-shadow: 10px 10px 10px 10px #04c8ba;
+}
+.form-input:invalid:not(:focus)::after {
+    content: '*';
+    display: inline-block;
+    color: red;
+}

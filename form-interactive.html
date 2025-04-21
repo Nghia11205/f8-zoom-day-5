@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Interactive</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="form">
+        <div class="form-register">
+            <h1 class="title">Registration Form</h1>
+            <form class="form-body" autocomplete="off" action="" method="post" spellcheck="false">
+                <div class="form-group">
+                    <label>
+                        <span class="form-label">Display Name:</span>
+                        <input type="text" minlength="8" maxlength="16" class="form-input" name="name" placeholder=" Your Name" required>
+
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <span class="form-label">Email:</span>
+                        <input type="email" class="form-input" name="email" placeholder=" Your Mail" required>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <span class="form-label">Phone Number:</span>
+                        <input type="number" class="form-input" name="number" placeholder=" Your Phone number" required>
+                        
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <span class="form-label">Password:</span>
+                        <input type="password" class="form-input" name="Password" placeholder=" Your Password" required>
+                        
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <span class="form-label">Confirm Password:</span>
+                        <input type="password" class="form-input" name="Password" placeholder=" Confirm your Password" required>
+                        
+                    </label>
+                </div>
+                <label  class="form-label">Gender:</label>
+                <div class="form-radio">
+                    <label  class="form-radio-label">
+                        <input type="radio" name="radio">
+                        <span class="radio">Nam</span>
+                    </label>
+                    <label  class="form-radio-label">
+                        <input type="radio" name="radio">
+                        <span class="radio">Nữ</span>
+                    </label>
+                    <label  class="form-radio-label">
+                        <input type="radio" name="radio">
+                        <span class="radio">Khác</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <span class="form-label">Date of Birth:</span>
+                        <input type="date" class="form-input" name="date" required >
+                    </label>
+                </div>
+                <label class="form-label">Profile Picture:
+                    <input type="file" name="file" accept="image/*" hidden>
+                    <img src="./img/img-avatar-placeholder.png" class="img-avatar-placeholder" alt="Avatar Placeholder">
+                    
+                </label>
+                <label  class="form-label">Communication Preferences:</label>
+                <div class="form-checkbox">
+                    <label class="form-checkbox-label"><input type="checkbox" name="mail"><span class="radio">Subscribe to Newsletter</span></label>
+                    <label class="form-checkbox-label"><input type="checkbox" name="mail"><span class="radio">Receive Promotional Emails</span></label>
+                    <label class="form-checkbox-label"><input type="checkbox" name="mail"><span class="radio">Get Product Updates</span></label>
+                </div>
+                <button class="btn">Create Account</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
